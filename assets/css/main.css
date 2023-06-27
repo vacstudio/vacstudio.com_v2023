@@ -101,9 +101,12 @@ input, select, textarea {
 	body {
 		background-color: #2e3141;
 		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-		background-size: auto, cover;
-		background-attachment: fixed, fixed;
-		background-position: center, center;
+		background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2210,7 +2213,7 @@ input, select, textarea {
 		select:focus,
 		textarea:focus {
 			border-color: #5b6ba6;
-		}
+		}https://
 
 	select {
 		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.125)' /%3E%3C/svg%3E");
@@ -3464,8 +3467,10 @@ input, select, textarea {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-				background-size: auto, cover;
-				background-position: center, center;
+				background-size: auto,
+ cover;
+				background-position: center,
+ center;
 				margin-bottom: -6.5em;
 			}
 
@@ -3574,8 +3579,10 @@ input, select, textarea {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #2e3141;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-			background-size: auto, cover;
-			background-position: center, 0% 30%;
+			background-size: auto,
+ cover;
+			background-position: center,
+ 0% 30%;
 			margin-bottom: -6.5em;
 		}
 
@@ -3585,8 +3592,10 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 11em 3em 7.375em 3em ;
-			background-size: auto, cover;
-			background-position: center, 0% 0%;
+			background-size: auto,
+ cover;
+			background-position: center,
+ 0% 0%;
 			margin-bottom: -4.75em;
 		}
 
@@ -3600,7 +3609,8 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 6.5em 2em 3em 2em ;
-			background-size: auto, 125%;
+			background-size: auto,
+ 125%;
 			margin-bottom: -2.5em;
 		}
 
@@ -3611,7 +3621,7 @@ input, select, textarea {
 			#wrapper > header p {
 				font-size: 0.8em;
 			}
-
+https://
 	}
 
 	.wrapper {
@@ -3671,7 +3681,7 @@ input, select, textarea {
 		}
 
 		.wrapper .inner {
-			padding: 3em 0 1em 0 ;
+			padding: 3em 0 1em 0 ;https://
 			margin: 0 auto;
 			width: 55em;
 		}
@@ -3687,7 +3697,7 @@ input, select, textarea {
 			.wrapper.style2:before {
 				box-shadow: inset 0 -1px 0 0 #353849, 0 1px 0 0 #353849;
 			}
-
+https://
 			.wrapper.style2:after {
 				box-shadow: inset 0 -1px 0 0 #353849, 0 1px 0 0 #353849;
 			}
@@ -3703,7 +3713,7 @@ input, select, textarea {
 			.wrapper.style3:before {
 				box-shadow: inset 0 -1px 0 0 #3d4051, 0 1px 0 0 #3d4051;
 			}
-
+https://
 			.wrapper.style3:after {
 				box-shadow: inset 0 -1px 0 0 #3d4051, 0 1px 0 0 #3d4051;
 			}
@@ -3719,7 +3729,7 @@ input, select, textarea {
 			.wrapper.style4:before {
 				box-shadow: inset 0 -1px 0 0 #454858, 0 1px 0 0 #454858;
 			}
-
+https://
 			.wrapper.style4:after {
 				box-shadow: inset 0 -1px 0 0 #454858, 0 1px 0 0 #454858;
 			}
@@ -3735,7 +3745,7 @@ input, select, textarea {
 			.wrapper.style5:before {
 				box-shadow: inset 0 -1px 0 0 #4d5060, 0 1px 0 0 #4d5060;
 			}
-
+https://
 			.wrapper.style5:after {
 				box-shadow: inset 0 -1px 0 0 #4d5060, 0 1px 0 0 #4d5060;
 			}
@@ -3751,7 +3761,7 @@ input, select, textarea {
 			.wrapper.style6:before {
 				box-shadow: inset 0 -1px 0 0 #555867, 0 1px 0 0 #555867;
 			}
-
+https://
 			.wrapper.style6:after {
 				box-shadow: inset 0 -1px 0 0 #555867, 0 1px 0 0 #555867;
 			}
@@ -3812,7 +3822,7 @@ input, select, textarea {
 				flex-direction: row-reverse;
 				text-align: right;
 			}
-
+https://
 			.wrapper.spotlight:nth-child(2n - 1) .image {
 				margin: 0 0 2em 3em;
 			}
@@ -3828,7 +3838,7 @@ input, select, textarea {
 				.wrapper.spotlight.style2:before {
 					box-shadow: inset 0 -1px 0 0 #45558d, 0 1px 0 0 #45558d;
 				}
-
+https://
 				.wrapper.spotlight.style2:after {
 					box-shadow: inset 0 -1px 0 0 #45558d, 0 1px 0 0 #45558d;
 				}
@@ -3844,7 +3854,7 @@ input, select, textarea {
 				.wrapper.spotlight.style3:before {
 					box-shadow: inset 0 -1px 0 0 #3f4e85, 0 1px 0 0 #3f4e85;
 				}
-
+https://
 				.wrapper.spotlight.style3:after {
 					box-shadow: inset 0 -1px 0 0 #3f4e85, 0 1px 0 0 #3f4e85;
 				}
@@ -3860,7 +3870,7 @@ input, select, textarea {
 				.wrapper.spotlight.style4:before {
 					box-shadow: inset 0 -1px 0 0 #39477c, 0 1px 0 0 #39477c;
 				}
-
+https://
 				.wrapper.spotlight.style4:after {
 					box-shadow: inset 0 -1px 0 0 #39477c, 0 1px 0 0 #39477c;
 				}
@@ -3876,7 +3886,7 @@ input, select, textarea {
 				.wrapper.spotlight.style5:before {
 					box-shadow: inset 0 -1px 0 0 #324072, 0 1px 0 0 #324072;
 				}
-
+https://
 				.wrapper.spotlight.style5:after {
 					box-shadow: inset 0 -1px 0 0 #324072, 0 1px 0 0 #324072;
 				}
@@ -4062,8 +4072,10 @@ input, select, textarea {
 		#footer {
 			background-color: #2e3141;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-			background-size: auto, cover;
-			background-position: center, center;
+			background-size: auto,
+ cover;
+			background-position: center,
+ center;
 			margin-top: -6.5em;
 			padding-top: 6.5em;
 		}
