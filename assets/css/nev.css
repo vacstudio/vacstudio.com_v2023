@@ -1,3 +1,32 @@
 .image {
-    border: 5px solid rgba(255, 255, 255, .2);
+  border: 5px solid rgba(255, 255, 255, .2);
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.player .player-icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  background: rgba(0, 0, 0, .7);
+  font-size: 1em;
+  color: white;
+  text-align: center;
+}
+
+.icon-play {
+  font-style: normal;
+  font-size: 3em;
+  line-height: 250px;
+}
+
+.player a:hover .player-icon {
+  visibility: visible;
+}
+
+ul li {
+  text-align: left;
 }
