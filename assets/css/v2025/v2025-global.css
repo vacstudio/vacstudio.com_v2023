@@ -1,0 +1,129 @@
+/** Text Highlight */
+::selection {
+  background: var(--primary);
+  color: var(--secondary);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: var(--primary);
+  color: var(--secondary);
+  text-shadow: none;
+}
+
+[data-select="inverse"] ::selection {
+  background: var(--secondary);
+  color: var(--primary);
+  text-shadow: none;
+}
+
+[data-select="inverse"] ::-moz-selection {
+  background: var(--secondary);
+  color: var(--primary);
+  text-shadow: none;
+}
+
+/** Font Smoothing */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/** Toggle States */
+[data-css="toggle"] {
+  .toggle-ball {
+    transform: translateX(0%);
+    transition: transform .3s ease-out;
+  }
+}
+
+[data-css="toggle"]:has(input:checked) {
+  .toggle-ball {
+    transform: translateX(100%);
+    background-color: #10CD00;
+    border-color: #10CD00;
+  }
+}
+
+img {
+  user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+
+/* -- explainer css */
+/* -- explainer css */
+[data-css="explainer"] {
+  .explainer-expandable-w {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s;
+  }
+
+  .plus-icon-w {
+    transform: rotate(0deg);
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .plus-icon-w > div:nth-child(1) {
+    transform: scaleX(1);
+    transition: transform 0.4s ease-in-out;
+  }
+}
+
+[data-css="explainer"]:has(input:checked) {
+  .explainer-expandable-w {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+
+  .plus-icon-w {
+    transform: rotate(90deg);
+  }
+
+  .plus-icon-w > div:nth-child(1) {
+    transform: scaleX(0);
+  }
+}
+
+@media (max-width: 599px)
+{
+[data-css="explainer"] {
+  .explainer-expandable-w {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 0.5s;
+  }
+}
+}
+
+/** -- toggle styles */
+[data-css="toggle"] {
+  position: relative;
+
+  .toggle-slider {
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .toggle-ball {
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* -- sky hero mask */
+.sky-hero-w {
+  clip-path: polygon(20% 13%, 65% 14%, 63% 90%, 20% 84%);
+}
+
+/* -- slider current style */
+[data-animate="slider"] {
+  .current > div {
+    background-color: var(--green);
+    transition: background-color 0.3s ease-in-out 0.2s;
+  }
+}
