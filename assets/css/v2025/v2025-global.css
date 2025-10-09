@@ -1,3 +1,7 @@
+[data-start="hidden"] {
+  visibility: hidden;
+}
+
 /** Text Highlight */
 ::selection {
   background: var(--primary);
