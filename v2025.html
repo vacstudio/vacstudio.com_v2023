@@ -52,24 +52,24 @@
       <div class="sub-nav-bg">
         <ul data-animate="sectionselector" role="list" class="sub-nav-w w-list-unstyled">
           <li data-to="flip" class="link-li-w current">
-            <div>Flip</div>
+            <div>Media</div>
             <div data-selector="highlight" class="current-highlight"></div>
           </li>
           <li data-to="scrolltrigger" class="link-li-w">
-            <div>Scroll Trigger</div>
+            <div>Creativity</div>
           </li>
           <li data-to="slider" class="link-li-w">
-            <div>Slider</div>
+            <div>Categories</div>
+          </li>
+          <li data-to="marquee" class="link-li-w">
+            <div>Our Motto</div>
           </li>
           <!-- <li data-to="inertia" class="link-li-w">
             <div>Inertia</div>
           </li> -->
           <li data-to="text" class="link-li-w">
-            <div>Text Effects</div>
+            <div>About Us</div>
           </li>
-          <!-- <li data-to="marquee" class="link-li-w">
-            <div>Marquee</div>
-          </li> -->
         </ul>
       </div>
     </div>
@@ -353,126 +353,11 @@
             
             <div class="layer">
               <div data-videogrow="video" class="sky-scroller">
-                <img src="https://cdn.prod.website-files.com/67fea42b19018db93e3fe132/68013ab170e0a7b7eb1a7ebe_sky.avif" loading="lazy" sizes="(max-width: 1198px) 100vw, 1198px" srcset="https://cdn.prod.website-files.com/67fea42b19018db93e3fe132/68013ab170e0a7b7eb1a7ebe_sky-p-500.avif 500w, https://cdn.prod.website-files.com/67fea42b19018db93e3fe132/68013ab170e0a7b7eb1a7ebe_sky.avif 1198w" alt="" class="img-sky"/>
+                <img src="images/concept-cinema-with-film-elements.jpg" loading="lazy" sizes="(max-width: 1198px) 100vw, 1198px" srcset="images/concept-cinema-with-film-elements.jpg 500w, images/concept-cinema-with-film-elements.jpg 1198w" alt="" class="img-sky"/>
               </div>
             </div>
           </div>
-          
-          <div class="layer flex-b z-3">
-            <div class="code-block w-embed w-script">
-              <script>
-                const split = (text, type = "chars") => {
-                  text.setAttribute("aria-label", text.textContent);
-                  const splits = new SplitText(text, { type });
-                  splits[type].forEach((char) => char.setAttribute("aria-hidden", "true"));
-                  return splits[type];
-                };
 
-                addEventListener("GSAPReady", (event) => {
-
-                  const section = document.querySelector("[data-animate='videogrow']");
-                  const video = section.querySelector("[data-videogrow='video']");
-                  const img = video.children[0];
-
-                  const title = split(
-                    section.querySelector("[data-videogrow='title']"),
-                    "chars"
-                  );
-
-                  const tl = gsap.timeline({
-                    scrollTrigger: {
-                      trigger: section,
-                      start: "top center",
-                      end: "bottom bottom+=100%",
-                      invalidateOnRefresh: true,
-                      scrub: 1,
-                    },
-                  });
-                  
-                  gsap.set(
-                    title, 
-                      {
-                      scale: 0,
-                      rotation: (i) => Math.random() * 360 - 180,
-                    })
-
-                  tl.to(
-                    title,
-                    {
-                      scale: 1,
-                      duration: 0.2,
-                      rotation: 0,
-                      ease: "expo.out",
-                      stagger: {
-                        each: 0.05,
-                        from: "random",
-                      },
-                    }
-                  );
-
-                  tl.fromTo(
-                    video,
-                    {
-                      clipPath: "inset(10% 50% 10% 50%)",
-                      yPercent: 100,
-                    },
-                    {
-                      ease: "power3",
-                      clipPath: "inset(0% 0% 0% 0%)",
-                      duration: 1,
-                      yPercent: 0,
-                    },
-                    ".3"
-                  );
-
-                  tl.fromTo(
-                    video,
-                    {
-                      scale: 0.5,
-                      // rotation: 180,
-                    },
-                    {
-                      ease: "back.inOut(.2)",
-                      scale: 1,
-                      duration: 0.8,
-                      // rotation: 0,
-                    },
-                    "<"
-                  );
-
-                  tl.fromTo(
-                    img,
-                    {
-                      scale: 2.8,
-                      yPercent: 40,
-                    },
-                    {
-                      scale: 1.2,
-                      duration: 0.8,
-                      delay: 0.2,
-                      yPercent: 0,
-                    },
-                    "<"
-                  );
-
-                  tl.to(video, {
-                    scale: 0.9,
-                    ease: "linear",
-                  });
-
-                  tl.to(
-                    img,
-                    {
-                      scale: 1,
-                      ease: "linear",
-                    },
-                    "<"
-                  );
-                });
-              </script>
-            </div>
-
-          </div>
         </section>
         <!-- Scroll Trigger end -->
 
@@ -1020,6 +905,34 @@
         </section>
         <!-- Slider end -->
 
+        <!-- Marquee start -->
+        <section id="marquee" data-animate="marquee" class="sec">
+          <div class="comp scroller">
+            <div data-marquee="line" class="scroller-line first">
+              <div class="scroller-text"> Simple • Strong • Smart • </div>
+              <!-- <div class="marquee-img">
+                <div class="dual-img">
+                  <img src="https://cdn.prod.website-files.com/67fea42b19018db93e3fe132/68121015d96d6954095ef777_socks.avif" loading="eager" alt="" class="dual-img-img"/>
+                  <img src="https://cdn.prod.website-files.com/67fea42b19018db93e3fe132/68120ec1e289d92b32665f96_socks-shadow.avif" loading="eager" alt="" class="dual-img-shadow"/>
+                </div>
+              </div>  -->
+              <!-- <div class="scroller-text"> Strong • </div> -->
+            </div>
+            
+            <div data-marquee="line" class="scroller-line second">
+              <!-- <div class="scroller-text"> Strong • </div> -->
+              <!-- <div class="marquee-img">
+                <div class="dual-img">
+                  <img src="https://cdn.prod.website-files.com/67fea42b19018db93e3fe132/68120fa8f48810a5b328c7a4_tomato.avif" loading="eager" alt="" class="dual-img-img"/>
+                  <img src="https://cdn.prod.website-files.com/67fea42b19018db93e3fe132/68120ec1fdd37f3577bdedb8_tomato-shadow.avif" loading="eager" alt="" class="dual-img-shadow"/>
+                </div>
+              </div> -->
+              <div class="scroller-text"> Smart • Simple • Strong • </div>
+            </div>
+          </div>
+        </section>
+        <!-- Marquee end -->
+
         <!-- Inertia start ->
         <section id="inertia" data-animate="inertia" class="sec inertia">
           <div data-inertia="item" class="comp inertia">
@@ -1056,24 +969,24 @@
             <li class="text-g-item">
               <div class="text-example-container">
                 <div data-delay=".1" data-animate="text" data-type="chars" data-duration="1.2" class="text-effect-w">
-                  <div class="text-effect-tx">Split Chars</div>
+                  <div class="text-effect-tx">Visual Production</div>
                 </div>
               </div>
               
               <div class="text-example-tx-w">
-                <div>Character Split Reveal</div>
+                <div>With our team of talented artists, designers, and technicians, we have honed our expertise in the art of visual storytelling. Whether you require breathtaking videos, stunning animations, or striking graphic designs, we possess the skills and passion to transform your ideas into a captivating reality.<br><br></div>
               </div>
             </li>
             
             <li class="text-g-item">
               <div class="text-example-container">
                 <div data-delay=".2" data-animate="text" data-type="words" data-duration="1.2" class="text-effect-w">
-                  <div class="text-effect-tx">Split By Words</div>
+                  <div class="text-effect-tx">Audio Works</div>
                 </div>
               </div>
               
               <div class="text-example-tx-w">
-                <div>Word Split Reveal</div>
+                <div>With a team of highly skilled sound engineers, composers, and technicians, we possess the expertise and passion to bring your audio vision to life. Whether you need professional music production, compelling sound design, or seamless audio post-production, we have the tools and knowledge to deliver outstanding results.</div>
               </div>
             </li>
             
@@ -1092,12 +1005,12 @@
             <li class="text-g-item">
               <div class="text-example-container">
                 <div data-delay=".1" data-animate="text" data-type="alpha" data-duration="1.2" class="text-effect-w">
-                  <div class="text-effect-tx">Split Alpha</div>
+                  <div class="text-effect-tx">Code Craft</div>
                 </div>
               </div>
               
               <div class="text-example-tx-w">
-                <div>Alpha Reveal</div>
+                <div>With a team of skilled software engineers, architects, and developers, we possess the knowledge and experience to tackle complex coding challenges across various platforms and technologies. Whether you need a web application, or mobile app, we have the skills and passion to turn your ideas into functional, scalable, and secure code.</div>
               </div>
             </li>
             
@@ -1125,206 +1038,9 @@
               </div>
             </li> -->
           </ul>
-          
-          <div class="code-block w-embed w-script">
-            <script>
-              {
 
-              /** Utility Functions */
-              const split = (text, type = "chars") => {
-                text.setAttribute("aria-label", text.textContent);
-                const splits = new SplitText(text, { type });
-                splits[type].forEach((char) => char.setAttribute("aria-hidden", "true"));
-                return splits[type];
-              };
-
-              const getParams = (item) => {
-                const { duration, delay, stagger, ease, type } = item.dataset;
-                const params = {
-                  duration: 1.2,
-                  delay: 0,
-                  type: "chars",
-                };
-
-                if (duration) params.duration = parseFloat(duration);
-                if (delay) params.delay = parseFloat(delay);
-                if (type && (type === "chars" || type === "words" || type === "lines"))
-                  params.type = type;
-
-                return params;
-              };
-
-              const baseAnimation = (item) => {
-                const params = getParams(item);
-                return {
-                  duration: params.duration,
-                  delay: params.delay,
-                  ease: "expo.out",
-                  //   stagger each item so the letters come in one after the other
-                  stagger: {
-                    each: 0.04,
-                    from: "start",
-                  },
-                  scrollTrigger: {
-                    trigger: item,
-                    // use scrolltrigger to trigger on enter and reset on exit
-                    toggleActions: "play reset play reset",
-                  },
-                };
-              };
-
-              /** (1) Split Reveal Animation */
-              function createSplitRevealAnimation(item) {
-                const params = getParams(item); // 1. get params from attributes
-                const text = split(item, params.type); // 2. split the text
-                item.style.overflow = "hidden"; // 3. set container to overflow
-
-                // 4. create the animation
-                return gsap.fromTo(
-                  text,
-                  { yPercent: 120 },
-                  {
-                    ...baseAnimation(item),
-                    yPercent: 0,
-                  }
-                );
-              }
-
-              function createScrambledAnimation(item) {
-                const text = item.textContent;
-                const randomText = Array(text.length)
-                  .fill()
-                  .map(() => String.fromCharCode(Math.floor(Math.random() * (90 - 65) + 65)))
-                  .join("")
-                  .toLowerCase();
-
-                return gsap.fromTo(
-                  item.children[0],
-                  {
-                    scrambleText: randomText,
-                  },
-                  {
-                    ...baseAnimation(item),
-                    scrambleText: text,
-                    chars: text,
-                  }
-                );
-              }
-
-              function createAlphaAnimation(item) {
-
-                const params = getParams(item); // 1. get params from attributes
-                const text = split(item, "chars"); // 2. split the text
-
-                return gsap.fromTo(
-                  text,
-                  { autoAlpha: 0 },
-                  {
-                    ...baseAnimation(item),
-                    autoAlpha: 1,
-                    stagger: {
-                      each: 0.02,
-                      from: "random",
-                    },
-                  }
-                );
-              }
-
-              function createSideAnimation(item) {
-                const params = getParams(item);
-                const outer = split(item, "chars");
-                outer.forEach((char) => {
-                  char.style.overflow = "hidden";
-                });
-                const inner = split(item.children[0], "chars");
-
-                return gsap.fromTo(
-                  inner,
-                  { x: 100 },
-                  {
-                    ...baseAnimation(item),
-                    x: 0,
-                    stagger: {
-                      each: 0.02,
-                      from: "end",
-                    },
-                  }
-                );
-              }
-
-              function createUpDownAnimation(item) {
-                const params = getParams(item);
-                const outer = split(item, "chars");
-                outer.forEach((char) => {
-                  char.style.overflow = "hidden";
-                });
-                const inner = split(item.children[0], "chars");
-
-                return gsap.fromTo(
-                  inner,
-                  {
-                    yPercent: (i) => {
-                      return i % 2 === 0 ? 100 : -100;
-                    },
-                  },
-                  {
-                    ...baseAnimation(item),
-                    yPercent: 0,
-                    stagger: {
-                      each: 0.02,
-                      from: "random",
-                    },
-                  }
-                );
-              }
-
-              /** Main Text Effect Wrapper */
-              addEventListener("GSAPReady", (event) => {
-                const texts = [...document.querySelectorAll('[data-animate="text"]')];
-
-                texts.forEach((item) => {
-                  if (item.dataset.type === "chars") createSplitRevealAnimation(item);
-                  else if (item.dataset.type === "words") createSplitRevealAnimation(item);
-                  else if (item.dataset.type === "scramble") createScrambledAnimation(item);
-                  else if (item.dataset.type === "alpha") createAlphaAnimation(item);
-                  else if (item.dataset.type === "side") createSideAnimation(item);
-                  else if (item.dataset.type === "updown") createUpDownAnimation(item);
-                });
-              });
-
-              }
-            </script>
-          </div>
         </section>
         <!-- Text Effects end -->
-
-        <!-- Marquee start -->
-        <section id="marquee" data-animate="marquee" class="sec">
-          <div class="comp scroller">
-            <div data-marquee="line" class="scroller-line first">
-              <div class="scroller-text"> Simple • Strong • Smart • </div>
-              <!-- <div class="marquee-img">
-                <div class="dual-img">
-                  <img src="https://cdn.prod.website-files.com/67fea42b19018db93e3fe132/68121015d96d6954095ef777_socks.avif" loading="eager" alt="" class="dual-img-img"/>
-                  <img src="https://cdn.prod.website-files.com/67fea42b19018db93e3fe132/68120ec1e289d92b32665f96_socks-shadow.avif" loading="eager" alt="" class="dual-img-shadow"/>
-                </div>
-              </div>  -->
-              <!-- <div class="scroller-text"> Strong • </div> -->
-            </div>
-            
-            <div data-marquee="line" class="scroller-line second">
-              <!-- <div class="scroller-text"> Strong • </div> -->
-              <!-- <div class="marquee-img">
-                <div class="dual-img">
-                  <img src="https://cdn.prod.website-files.com/67fea42b19018db93e3fe132/68120fa8f48810a5b328c7a4_tomato.avif" loading="eager" alt="" class="dual-img-img"/>
-                  <img src="https://cdn.prod.website-files.com/67fea42b19018db93e3fe132/68120ec1fdd37f3577bdedb8_tomato-shadow.avif" loading="eager" alt="" class="dual-img-shadow"/>
-                </div>
-              </div> -->
-              <div class="scroller-text"> Smart • Simple • Strong • </div>
-            </div>
-          </div>
-        </section>
-        <!-- Marquee end -->
 
         <!-- FOOTER start -->
         <footer data-select="inverse" class="sec footer">
